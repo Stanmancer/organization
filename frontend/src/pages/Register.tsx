@@ -69,7 +69,7 @@ const Register = () => {
 
     try {
       // Use fetch directly instead of apiClient to avoid authentication middleware
-      const response = await fetch(`${import.meta.env.VITE_API_URL || 'https://api.verinest.xyz'}/auth/check-username?username=${encodeURIComponent(username)}`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL || 'https://api.verinest.xyz'}/api/auth/check-username?username=${encodeURIComponent(username)}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
