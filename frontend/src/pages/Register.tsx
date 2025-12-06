@@ -31,6 +31,7 @@ const Register = () => {
     referral_code: referralFromUrl,
     role: '', // Add role to form data
   });
+  
   const [acceptedTerms, setAcceptedTerms] = useState(false);
   const [loading, setLoading] = useState(false);
   const [registered, setRegistered] = useState(false);
