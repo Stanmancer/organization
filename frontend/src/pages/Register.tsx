@@ -75,6 +75,7 @@ const Register = () => {
           'Content-Type': 'application/json',
         },
       });
+      
 
       if (!response.ok) {
         throw new Error('Failed to check username availability');
