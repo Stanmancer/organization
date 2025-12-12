@@ -31,6 +31,7 @@ const Register = () => {
     referral_code: referralFromUrl,
     role: '', // Add role to form data
   });
+  
   const [acceptedTerms, setAcceptedTerms] = useState(false);
   const [loading, setLoading] = useState(false);
   const [registered, setRegistered] = useState(false);
@@ -75,6 +76,7 @@ const Register = () => {
           'Content-Type': 'application/json',
         },
       });
+      
 
       if (!response.ok) {
         throw new Error('Failed to check username availability');
